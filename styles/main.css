@@ -23,3 +23,134 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     padding: 0 70px;
 }
+
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+/* sidenav */
+.header__burger {
+    display: none;
+}
+.burger__line {
+
+    background: #b36050;
+    width: 10px;
+    height: 2px;
+}
+
+.sidenav__line {
+
+}
+.sidenav {
+    
+}
+.sidenav__logo {
+}
+.sidenav-close {
+}
+.material-icons {
+}
+.sidenav__line {
+}
+/* header */
+.header {
+
+}
+.header__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header__top {
+    background: #b36050;
+    padding: 10px 0;
+}
+
+.header__top p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 160%;
+    text-align: center;
+    color: #f1d3b9;
+}
+.header__bottom-flex {
+    padding: 0 8px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.header__bottom-flex ul {
+    padding-left: 14px;
+    width: 424px;
+    height: 61px;
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+.header__bottom-flex ul a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #b4604d;
+    text-decoration: none;
+}
+.header__logo {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.header__button {
+    padding: 0 16px;
+    max-width: 128px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__button p {
+    margin-top: 3px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: #b4604d;
+}
+.header__account-button {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #b45f4d;
+}
+
+.header__buy-button {
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 860px){
+    .header__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .header__bottom-flex ul {
+        display: none;
+    }
+    
+    .header__account-button {
+        display: none;
+    }
+
+    .header__button {
+        max-width: 50px;
+    }
+}
