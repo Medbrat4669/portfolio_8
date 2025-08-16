@@ -270,3 +270,55 @@ h1, h2, h3, h4, h5, h6, p {
         line-height: 35px;
     }
 }
+
+/* showcase */
+.showcase {
+    background: #f6f4ec;
+    padding-top: 39px;
+    padding-bottom: 87px;
+
+}
+.showcase h5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 170%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #b45f4d;
+}
+.showcase__grid-items {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+}
+.showcase__grid-item {
+}
+.showcase__grid-item img {
+    width: 100%;
+}
+.show__card-title {
+    margin-top: 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #b45f4d;
+}
+.show__card-price {
+    margin-top: 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #b45f4d;
+}
+
+@media screen and (max-width: 800px){
+    .showcase__grid-items {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+}
