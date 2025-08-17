@@ -415,3 +415,134 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 15px;
     }
 }
+
+/* meet dae */
+.meet__dae {
+    position: relative;
+    background: #f1d3b9;
+    padding-bottom: 57px;
+
+}
+
+.meet__dae img {
+    margin-top: 62px;
+    margin-left: 183px;
+    max-width: 632px;
+    width: 100%;
+    height: auto;
+}
+.meet__dae-text {
+    position: absolute;
+    top: 288px;
+    right: 157px;
+    padding: 0 51px;
+    background: #f8f8f8;
+    max-width: 518px;
+    width: 100%;
+    height: 582px;
+}
+
+.meet__dae-text h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 57px;
+    color: #b45f4d;
+}
+
+.meet__dae-text p {
+    margin-top: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #b45f4d;
+}
+.meet__dae-text a {
+    margin-top: 44px;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #b45f4d;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.meet__dae-text a:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px){
+    .meet__dae-text {
+        padding: 0 20px;
+        top: 480px;
+        max-width: 400px;
+    }
+
+    .meet__dae-text a {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .meet__dae {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .meet__dae-text {
+        position: static;
+    }
+    .meet__dae img {
+        margin-left: 0;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .meet__dae {
+        padding: 0 150px 50px;
+    }
+    .meet__dae-text {
+        max-width: none;
+        height: auto;
+    }
+
+    .meet__dae-text h3 {
+        margin-top: 10px;
+    }
+    .meet__dae-text p {
+        margin-top: 0;
+    }
+    .meet__dae-text a {
+        display: flex;
+        justify-content: center;
+    }
+    .meet__dae img {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .meet__dae {
+        padding: 0 70px 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .meet__dae {
+        padding: 0 30px 50px;
+    }
+
+    .meet__dae-text p {
+        line-height: 30px;
+    }
+}
