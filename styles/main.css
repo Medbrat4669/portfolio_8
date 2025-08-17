@@ -75,13 +75,18 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px 0;
 }
 
-.header__top p {
+.header__top a{
+    display: flex;
+    justify-content: center;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 17px;
     line-height: 160%;
-    text-align: center;
     color: #f1d3b9;
+    transition: transform 0.3s ease;
+}
+.header__top a:hover {
+    transform: scale(1.1);
 }
 .header__bottom-flex {
     padding: 5px 8px;
@@ -294,6 +299,10 @@ h1, h2, h3, h4, h5, h6, p {
     column-gap: 80px;
 }
 .showcase__grid-item {
+    transition: transform 0.3s ease;
+}
+.showcase__grid-item:hover {
+    transform: scale(1.1);
 }
 .showcase__grid-item img {
     width: 100%;
@@ -567,6 +576,12 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
+}
+.follow__us__items-flex a {
+    transition: transform 0.3s ease;
+}
+.follow__us__items-flex a:hover {
+    transform: scale(1.1);
 }
 
 /* footer */
